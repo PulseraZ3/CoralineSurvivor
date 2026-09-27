@@ -1,0 +1,5 @@
+﻿  Main.cpp
+C:\Users\Leona\Documents\Programacion\C++\CoralineSurvivors\Main.cpp(111,15): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+C:\Users\Leona\Documents\Programacion\C++\CoralineSurvivors\Main.cpp(139,9): warning C4996: '_sleep': This function or variable has been superceded by newer library or operating system functionality. Consider using Sleep instead. See online help for details.
+  Main.obj : se encontró un módulo MSIL; vinculación incremental deshabilitada para MSIL; ejecutando vínculo completo
+  CoralineSurvivors.vcxproj -> C:\Users\Leona\Documents\Programacion\C++\CoralineSurvivors\x64\Debug\CoralineSurvivors.exe

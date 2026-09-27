@@ -1,0 +1,14 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "Coraline.7BBE382E\\x64\\Debug\\ArmaRange.obj",
+            "outputs": [
+                "Coraline.7BBE382E\\x64\\Debug\\ArmaRange.h.obj.dt.module.json",
+                "Coraline.7BBE382E\\x64\\Debug\\ArmaRange.h.obj.dt.d.json"
+            ],
+            "requires": []
+        }
+    ]
+}

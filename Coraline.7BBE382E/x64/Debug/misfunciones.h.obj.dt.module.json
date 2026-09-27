@@ -1,0 +1,14 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "Coraline.7BBE382E\\x64\\Debug\\misfunciones.obj",
+            "outputs": [
+                "Coraline.7BBE382E\\x64\\Debug\\misfunciones.h.obj.dt.module.json",
+                "Coraline.7BBE382E\\x64\\Debug\\misfunciones.h.obj.dt.d.json"
+            ],
+            "requires": []
+        }
+    ]
+}

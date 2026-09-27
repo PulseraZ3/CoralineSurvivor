@@ -123,6 +123,23 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Arma.h" />
+    <ClInclude Include="ArmaMelee.h" />
+    <ClInclude Include="ArmaRange.h" />
+    <ClInclude Include="Enemigo.h" />
+    <ClInclude Include="Entidad.h" />
+    <ClInclude Include="Gato.h" />
+    <ClInclude Include="Interfaz.h" />
+    <ClInclude Include="Jugador.h" />
+    <ClInclude Include="matrices.h" />
+    <ClInclude Include="misfunciones.h" />
+    <ClInclude Include="Padre.h" />
+    <ClInclude Include="misAsciiArt.h" />
+    <ClInclude Include="Proyectil.h" />
+    <ClInclude Include="Rata.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
