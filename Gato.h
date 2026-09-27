@@ -2,6 +2,8 @@
 #include "Jugador.h"
 #include "Arma.h"
 #include "ArmaRange.h"
+#include "Colisiones.h"
+#include "matrices.h" 
 class Gato: public Jugador {
 private:
 	Arma** arma;
@@ -15,16 +17,23 @@ private:
 
 public:
 	Gato(bool jugado);
-	void dibujar() override;
-	void borrar(int xAnterior, int yAnterior) override;
-	void mover() override;
+	void dibujar(int mapa[40][120]);
+	void borrar(int xAnterior,
+        int yAnterior,
+        int mapa[40][120]);
+    void mover(int mapa[40][120]);;
 	bool getJugado();
 	void setJugado(bool jugado);
     int getDanioArma();
     Proyectil** getProyectil();
     int getCantidadProyectiles();
     void disparar(int dx, int dy);
-
+    string* getArt() override {
+        return gatoArtInterfaz;
+    }
+    int getArtAlto() override {
+        return 4;
+    }
 };
 
 Gato::Gato(bool jugado): Jugador() {
@@ -39,6 +48,7 @@ Gato::Gato(bool jugado): Jugador() {
 	direccionX = 1;
 	direccionY = 0;
 	this->jugado = jugado;
+    Nombre = "Gato Negro";
 }
 bool Gato::getJugado() {
 	return jugado;
@@ -57,18 +67,62 @@ void Gato::setJugado(bool jugado) {
 int Gato::getDanioArma() {
     return arma[0]->getDanio();
 }
+void Gato::dibujar(int mapa[40][120]) {
+    for (int fila = 0; fila < 3; fila++) {
+        int longitud = gatoArt[fila].length();
 
-void Gato::dibujar() {
-	for (int i = 0;i < 3;i++) {
-		Console::SetCursorPosition(x, y + i);
-		cout <<gatoArt[i];
-	}
+        for (int columna = 0; columna < longitud; columna++) {
+            if (gatoArt[fila][columna] == ' ') continue;
+
+            int mapaX = x + columna;
+            int mapaY = y + fila;
+
+            if (mapaX >= 0 && mapaX < 120 && mapaY >= 0 && mapaY < 40) {
+                if (mapa[mapaY][mapaX] == 0) {
+                    Console::BackgroundColor = ConsoleColor::Black;
+                }
+                else if (mapa[mapaY][mapaX] == 1) {
+                    Console::BackgroundColor = ConsoleColor::White;
+                }
+                else if (mapa[mapaY][mapaX] == 2) {
+                    Console::BackgroundColor = ConsoleColor::Cyan;
+                }
+
+                Console::SetCursorPosition(mapaX + OFFSET_X, mapaY);
+                cout << gatoArt[fila][columna];
+            }
+        }
+    }
+    Console::BackgroundColor = ConsoleColor::Black;
 }
-void Gato::borrar(int xAnterior, int yAnterior) {
-	for (int i = 0;i < 3;i++) {
-		Console::SetCursorPosition(xAnterior, yAnterior + i);
-		cout << "     ";
-	}
+void Gato::borrar(int xAnterior, int yAnterior, int mapa[40][120]) {
+    for (int fila = 0; fila < 3; fila++) {
+        int longitud = gatoArt[fila].length();
+
+        for (int columna = 0; columna < longitud; columna++) {
+            if (gatoArt[fila][columna] == ' ') continue;
+
+            int mapaX = xAnterior + columna;
+            int mapaY = yAnterior + fila;
+
+            if (mapaX >= 0 && mapaX < 120 && mapaY >= 0 && mapaY < 40) {
+                if (mapa[mapaY][mapaX] == 0) {
+                    Console::BackgroundColor = ConsoleColor::Black;
+                }
+                else if (mapa[mapaY][mapaX] == 1) {
+                    Console::BackgroundColor = ConsoleColor::White;
+                }
+                else if (mapa[mapaY][mapaX] == 2) {
+                    Console::BackgroundColor = ConsoleColor::Cyan;
+                }
+
+                // Offset también aquí, mismo criterio
+                Console::SetCursorPosition(mapaX + OFFSET_X, mapaY);
+                cout << " ";
+            }
+        }
+    }
+    Console::BackgroundColor = ConsoleColor::Black;
 }
 void Gato::disparar(int dx, int dy) {
 
@@ -100,7 +154,7 @@ void Gato::disparar(int dx, int dy) {
     }
 }
 
-void Gato::mover() {
+void Gato::mover(int mapa[40][120]) {
 
     if (jugado == true) {
 
@@ -109,19 +163,30 @@ void Gato::mover() {
             int tecla = _getch();
 
             if (tecla == 'w') {
-                y--;
+                if (puedeMoverGato(mapa, x, y - 1)) {
+                    y--;
+
+                }
             }
 
             if (tecla == 's') {
-                y++;
+                if (puedeMoverGato(mapa, x, y + 1)) {
+                    y++;
+
+                }
+              
             }
 
             if (tecla == 'a') {
-                x--;
+                if (puedeMoverGato(mapa, x-1, y )) {
+                    x--;    
+                }
             }
 
             if (tecla == 'd') {
-                x++;
+                if (puedeMoverGato(mapa, x + 1, y)) {
+                    x++;
+                }
             }
 
             if (tecla == 224) {

@@ -5,30 +5,39 @@
 #include "Rata.h"
 #include "Interfaz.h"
 #include "misfunciones.h"
+#include "matrices.h"
 using namespace std;
-bool moverGatoMatriz(int mapa[40][120], int x,int y) {
-    int ancho = 9;
-    int alto = 3;
-        for (int fila = 0; fila < alto; fila++) {
-            for (int columna = 0; columna < ancho; columna++) {
 
-                int mapaX = x + columna;
-                int mapaY = y + fila;
+int (*mapaActual)[120] = mapa1; 
+int mapaIndiceActual = 0;
+bool tocaPuerta(int mapa[40][120], int x, int y) {
+    for (int fila = 0; fila < 3; fila++) {
+        for (int columna = 0; columna < 5; columna++) {
+            int mapaX = x + columna;
+            int mapaY = y + fila;
 
-                if (mapaX < 0 || mapaX >= 120 ||
-                    mapaY < 0 || mapaY >= 40) {
-                    return false;
-                }
+            if (mapaX < 0 || mapaX >= 120 || mapaY < 0 || mapaY >= 40) continue;
 
-                if (mapa[mapaY][mapaX] == 1) {
-                    return false;
-                }
+            if (mapa[mapaY][mapaX] == PUERTA) {
+                return true;
             }
         }
-
-    return true;
+    }
+    return false;
 }
+void cambiarMapaAleatorio(Interfaz* interfaz, Gato* gato) {
+    int nuevoIndice = rand() % 6;
+    mapaActual = mapas[nuevoIndice];
 
+    gato->setX(spawnX[nuevoIndice]);
+    gato->setY(spawnY[nuevoIndice]);
+
+    Console::Clear();
+    interfaz->dibujarMapa(mapaActual);
+    interfaz->dibujarMarco();
+    interfaz->dibujarHUD(gato);
+    gato->dibujar(mapaActual);
+}
 Rata** crearRatas(int cantidad) {
     Rata** ratas = new Rata * [cantidad];
     for (int i = 0; i < cantidad; i++) {
@@ -59,30 +68,51 @@ void actualizarRatas(Rata** ratas, int cantidadRatas) {
 
     }
 }
-void actualizarProyectiles(Gato* gato) {
+void actualizarProyectiles(Gato* gato, int mapa[40][120]) {
 
-    for (int i = 0;
-        i < gato->getCantidadProyectiles();
-        i++) {
-        Proyectil* proyectil =
-            gato->getProyectil()[i];
+    for (int i = 0; i < gato->getCantidadProyectiles(); i++) {
+        Proyectil* proyectil = gato->getProyectil()[i];
 
-        int xAnterior =
-            proyectil->getX();
-
-        int yAnterior =
-            proyectil->getY();
+        int xAnterior = proyectil->getX();
+        int yAnterior = proyectil->getY();
 
         proyectil->mover();
 
-        proyectil->borrar(
-            xAnterior,
-            yAnterior
-        );
+        for (int k = 0; k < 3; k++) {
+            proyectil->repintarCelda(xAnterior + k, yAnterior, mapa);
+        }
 
         if (proyectil->getDistanciaRecorrida() > 0) {
 
-            proyectil->dibujar();
+            int mapaX = proyectil->getX();
+            int mapaY = proyectil->getY();
+
+            bool fueraDeLimites = (mapaX < 0 || mapaX + 2 >= 120 ||
+                mapaY < 0 || mapaY >= 40);
+            bool chocoPared = false;
+
+            if (!fueraDeLimites) {
+                for (int k = 0; k < 3; k++) {
+                    if (mapa[mapaY][mapaX + k] == 1) {
+                        chocoPared = true;
+                        break;
+                    }
+                }
+            }
+
+            if (fueraDeLimites || chocoPared) {
+                proyectil->detener(); 
+            }
+            else {
+                switch (mapa[mapaY][mapaX]) {
+                case 0: Console::BackgroundColor = ConsoleColor::Black; break;
+                case 2: Console::BackgroundColor = ConsoleColor::Cyan; break;
+                default: Console::BackgroundColor = ConsoleColor::Black; break;
+                }
+
+                proyectil->dibujar();
+                Console::BackgroundColor = ConsoleColor::Black;
+            }
         }
     }
 }
@@ -126,38 +156,43 @@ void comprobarColisiones(
     }
 }
 int main() {
-
+    mostrarMenuAnimado();
     Console::CursorVisible = false;
-    Interfaz* interfaz = new Interfaz();
-    interfaz->dibujarMarco();
     srand(time(NULL));
+    Interfaz* interfaz = new Interfaz();
 
     Gato* gato = new Gato(true);
-    interfaz->dibujarHUD(gato);
+    gato->setX(spawnX[mapaIndiceActual]);
+    gato->setY(spawnY[mapaIndiceActual]);
     int cantidadRatas = 5;
 
-    Rata** ratas = crearRatas(cantidadRatas);
-
-    gato->dibujar();
+    // Rata** ratas = crearRatas(cantidadRatas);
+    interfaz->configurarConsola();
+    Console::Clear();
+    interfaz->dibujarMapa(mapaActual);
+    interfaz->dibujarMarco();
+    interfaz->dibujarHUD(gato);
+    gato->dibujar(mapaActual);
 
     while (true) {
+        int xAnterior = gato->getX();
+        int yAnterior = gato->getY();
+        gato->mover(mapaActual);
+        gato->borrar(xAnterior, yAnterior, mapaActual);
 
-        gato->borrar(gato->getX(),gato->getY());
-        gato->mover();
-        gato->dibujar();
-        
-        actualizarRatas(ratas,cantidadRatas);
+        if (tocaPuerta(mapaActual, gato->getX(), gato->getY())) {
+            cambiarMapaAleatorio(interfaz, gato);
+            continue;
+        }
 
-        actualizarProyectiles(
-            gato
-        );
+        gato->dibujar(mapaActual);
 
-        comprobarColisiones(
-            ratas,
-            cantidadRatas,
-            gato
-        );
+        //actualizarRatas(ratas,cantidadRatas);
 
+        actualizarProyectiles(gato, mapaActual);
+
+        // comprobarColisiones(ratas,cantidadRatas, gato);
+        interfaz->dibujarHUD(gato);
         _sleep(100);
     }
 

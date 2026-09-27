@@ -3,12 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\Leona\\Documents\\Programacion\\C\u002B\u002B\\CoralineSurvivors\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7BBE382E-0735-AD30-6884-373AF7EF4184}|CoralineSurvivors.vcxproj|C:\\Users\\Leona\\Documents\\Programacion\\C\u002B\u002B\\CoralineSurvivors\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{7BBE382E-0735-AD30-6884-373AF7EF4184}|CoralineSurvivors.vcxproj|solutionrelative:Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7BBE382E-0735-AD30-6884-373AF7EF4184}|CoralineSurvivors.vcxproj|C:\\Users\\Leona\\Documents\\Programacion\\C\u002B\u002B\\CoralineSurvivors\\Gato.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{7BBE382E-0735-AD30-6884-373AF7EF4184}|CoralineSurvivors.vcxproj|solutionrelative:Gato.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{7BBE382E-0735-AD30-6884-373AF7EF4184}|CoralineSurvivors.vcxproj|C:\\Users\\Leona\\Documents\\Programacion\\C\u002B\u002B\\CoralineSurvivors\\misAsciiArt.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7BBE382E-0735-AD30-6884-373AF7EF4184}|CoralineSurvivors.vcxproj|solutionrelative:misAsciiArt.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7BBE382E-0735-AD30-6884-373AF7EF4184}|CoralineSurvivors.vcxproj|C:\\Users\\Leona\\Documents\\Programacion\\C\u002B\u002B\\CoralineSurvivors\\Jugador.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -19,16 +15,12 @@
       "RelativeMoniker": "D:0:0:{7BBE382E-0735-AD30-6884-373AF7EF4184}|CoralineSurvivors.vcxproj|solutionrelative:Interfaz.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7BBE382E-0735-AD30-6884-373AF7EF4184}|CoralineSurvivors.vcxproj|C:\\Users\\Leona\\Documents\\Programacion\\C\u002B\u002B\\CoralineSurvivors\\misAsciiArt.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{7BBE382E-0735-AD30-6884-373AF7EF4184}|CoralineSurvivors.vcxproj|solutionrelative:misAsciiArt.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{7BBE382E-0735-AD30-6884-373AF7EF4184}|CoralineSurvivors.vcxproj|C:\\Users\\Leona\\Documents\\Programacion\\C\u002B\u002B\\CoralineSurvivors\\Gato.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7BBE382E-0735-AD30-6884-373AF7EF4184}|CoralineSurvivors.vcxproj|solutionrelative:Gato.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7BBE382E-0735-AD30-6884-373AF7EF4184}|CoralineSurvivors.vcxproj|C:\\Users\\Leona\\Documents\\Programacion\\C\u002B\u002B\\CoralineSurvivors\\misfunciones.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{7BBE382E-0735-AD30-6884-373AF7EF4184}|CoralineSurvivors.vcxproj|solutionrelative:misfunciones.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7BBE382E-0735-AD30-6884-373AF7EF4184}|CoralineSurvivors.vcxproj|C:\\Users\\Leona\\Documents\\Programacion\\C\u002B\u002B\\CoralineSurvivors\\matrices.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{7BBE382E-0735-AD30-6884-373AF7EF4184}|CoralineSurvivors.vcxproj|solutionrelative:matrices.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{7BBE382E-0735-AD30-6884-373AF7EF4184}|CoralineSurvivors.vcxproj|C:\\Users\\Leona\\Documents\\Programacion\\C\u002B\u002B\\CoralineSurvivors\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7BBE382E-0735-AD30-6884-373AF7EF4184}|CoralineSurvivors.vcxproj|solutionrelative:Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,8 +30,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 90,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Gato.h",
+              "DocumentMoniker": "C:\\Users\\Leona\\Documents\\Programacion\\C\u002B\u002B\\CoralineSurvivors\\Gato.h",
+              "RelativeDocumentMoniker": "Gato.h",
+              "ToolTip": "C:\\Users\\Leona\\Documents\\Programacion\\C\u002B\u002B\\CoralineSurvivors\\Gato.h",
+              "RelativeToolTip": "Gato.h",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAADIAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-09-27T04:49:47.608Z",
+              "IsPinned": true
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
@@ -51,87 +56,51 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Main.cpp",
-              "DocumentMoniker": "C:\\Users\\Leona\\Documents\\Programacion\\C\u002B\u002B\\CoralineSurvivors\\Main.cpp",
-              "RelativeDocumentMoniker": "Main.cpp",
-              "ToolTip": "C:\\Users\\Leona\\Documents\\Programacion\\C\u002B\u002B\\CoralineSurvivors\\Main.cpp",
-              "RelativeToolTip": "Main.cpp",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABgAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-09-27T02:32:52.942Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Gato.h",
-              "DocumentMoniker": "C:\\Users\\Leona\\Documents\\Programacion\\C\u002B\u002B\\CoralineSurvivors\\Gato.h",
-              "RelativeDocumentMoniker": "Gato.h",
-              "ToolTip": "C:\\Users\\Leona\\Documents\\Programacion\\C\u002B\u002B\\CoralineSurvivors\\Gato.h",
-              "RelativeToolTip": "Gato.h",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-09-27T02:34:48.299Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Interfaz.h",
-              "DocumentMoniker": "C:\\Users\\Leona\\Documents\\Programacion\\C\u002B\u002B\\CoralineSurvivors\\Interfaz.h",
-              "RelativeDocumentMoniker": "Interfaz.h",
-              "ToolTip": "C:\\Users\\Leona\\Documents\\Programacion\\C\u002B\u002B\\CoralineSurvivors\\Interfaz.h",
-              "RelativeToolTip": "Interfaz.h",
-              "ViewState": "AgIAACoAAAAAAAAAAAAAAEsAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-09-27T02:22:13.952Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "misfunciones.h",
-              "DocumentMoniker": "C:\\Users\\Leona\\Documents\\Programacion\\C\u002B\u002B\\CoralineSurvivors\\misfunciones.h",
-              "RelativeDocumentMoniker": "misfunciones.h",
-              "ToolTip": "C:\\Users\\Leona\\Documents\\Programacion\\C\u002B\u002B\\CoralineSurvivors\\misfunciones.h",
-              "RelativeToolTip": "misfunciones.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-09-27T02:21:40.493Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Jugador.h",
-              "DocumentMoniker": "C:\\Users\\Leona\\Documents\\Programacion\\C\u002B\u002B\\CoralineSurvivors\\Jugador.h",
-              "RelativeDocumentMoniker": "Jugador.h",
-              "ToolTip": "C:\\Users\\Leona\\Documents\\Programacion\\C\u002B\u002B\\CoralineSurvivors\\Jugador.h",
-              "RelativeToolTip": "Jugador.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-09-27T02:21:39.478Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "misAsciiArt.h",
               "DocumentMoniker": "C:\\Users\\Leona\\Documents\\Programacion\\C\u002B\u002B\\CoralineSurvivors\\misAsciiArt.h",
               "RelativeDocumentMoniker": "misAsciiArt.h",
               "ToolTip": "C:\\Users\\Leona\\Documents\\Programacion\\C\u002B\u002B\\CoralineSurvivors\\misAsciiArt.h",
               "RelativeToolTip": "misAsciiArt.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-09-27T02:21:38.89Z"
+              "WhenOpened": "2026-09-27T04:52:58.604Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "matrices.h",
-              "DocumentMoniker": "C:\\Users\\Leona\\Documents\\Programacion\\C\u002B\u002B\\CoralineSurvivors\\matrices.h",
-              "RelativeDocumentMoniker": "matrices.h",
-              "ToolTip": "C:\\Users\\Leona\\Documents\\Programacion\\C\u002B\u002B\\CoralineSurvivors\\matrices.h",
-              "RelativeToolTip": "matrices.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "Jugador.h",
+              "DocumentMoniker": "C:\\Users\\Leona\\Documents\\Programacion\\C\u002B\u002B\\CoralineSurvivors\\Jugador.h",
+              "RelativeDocumentMoniker": "Jugador.h",
+              "ToolTip": "C:\\Users\\Leona\\Documents\\Programacion\\C\u002B\u002B\\CoralineSurvivors\\Jugador.h",
+              "RelativeToolTip": "Jugador.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-09-27T02:20:59.028Z"
+              "WhenOpened": "2026-09-27T02:21:39.478Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Interfaz.h",
+              "DocumentMoniker": "C:\\Users\\Leona\\Documents\\Programacion\\C\u002B\u002B\\CoralineSurvivors\\Interfaz.h",
+              "RelativeDocumentMoniker": "Interfaz.h",
+              "ToolTip": "C:\\Users\\Leona\\Documents\\Programacion\\C\u002B\u002B\\CoralineSurvivors\\Interfaz.h",
+              "RelativeToolTip": "Interfaz.h",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAADAAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-09-27T04:48:34.668Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Main.cpp",
+              "DocumentMoniker": "C:\\Users\\Leona\\Documents\\Programacion\\C\u002B\u002B\\CoralineSurvivors\\Main.cpp",
+              "RelativeDocumentMoniker": "Main.cpp",
+              "ToolTip": "C:\\Users\\Leona\\Documents\\Programacion\\C\u002B\u002B\\CoralineSurvivors\\Main.cpp",
+              "RelativeToolTip": "Main.cpp",
+              "ViewState": "AgIAAHsAAAAAAAAAAAAAAHAAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-09-27T04:47:36.413Z"
             }
           ]
         }

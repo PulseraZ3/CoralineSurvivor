@@ -7,6 +7,8 @@ public:
 	Jugador();
 	float getVida();
 	void recibirDanio(int danio);
+	virtual string* getArt() = 0;
+	virtual int getArtAlto() = 0;
 };
 
 Jugador::Jugador() : Entidad() {

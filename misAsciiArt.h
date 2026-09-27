@@ -3,9 +3,16 @@
 using namespace std;
 
 string gatoArt[] = {
-	" ___",
+	" ^_^",
 	"(o.o)",
 	" >^<"
+};
+
+string gatoArtInterfaz[] = {
+" |\\__/,|   (`\\",
+" |_ _  | .--.  ) )",
+" (T) / )       /",
+"(((^_(((/(((_/",
 };
 string rataArt[] = {
 	" <:3 )~ ",

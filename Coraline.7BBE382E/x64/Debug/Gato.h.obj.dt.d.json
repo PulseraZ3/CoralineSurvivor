@@ -115,7 +115,10 @@
             "c:\\users\\leona\\documents\\programacion\\c++\\coralinesurvivors\\misasciiart.h",
             "c:\\users\\leona\\documents\\programacion\\c++\\coralinesurvivors\\arma.h",
             "c:\\users\\leona\\documents\\programacion\\c++\\coralinesurvivors\\armarange.h",
-            "c:\\users\\leona\\documents\\programacion\\c++\\coralinesurvivors\\proyectil.h"
+            "c:\\users\\leona\\documents\\programacion\\c++\\coralinesurvivors\\proyectil.h",
+            "c:\\users\\leona\\documents\\programacion\\c++\\coralinesurvivors\\matrices.h",
+            "c:\\program files (x86)\\windows kits\\10\\include\\10.0.26100.0\\ucrt\\conio.h",
+            "c:\\users\\leona\\documents\\programacion\\c++\\coralinesurvivors\\colisiones.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []
