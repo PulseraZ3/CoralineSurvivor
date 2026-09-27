@@ -48,7 +48,8 @@ void Interfaz::dibujarHUD(Jugador* jugador) {
     Console::SetCursorPosition(2, 10);
     cout << "VIDA: " << jugador->getVida() << "/100   ";
 
-
+    Console::SetCursorPosition(2, 12);
+    cout<<"lvl "<< jugador->getNivel() << "\tXP: " << jugador->getXp() << "/2   ";
 }
 void Interfaz::dibujarMapa(int mapa[40][120]) {
     for (int y = 0; y < 40; y++) {

@@ -127,11 +127,14 @@
     <ClInclude Include="ArmaMelee.h" />
     <ClInclude Include="ArmaRange.h" />
     <ClInclude Include="Colisiones.h" />
+    <ClInclude Include="Drop.h" />
     <ClInclude Include="Enemigo.h" />
     <ClInclude Include="Entidad.h" />
     <ClInclude Include="Gato.h" />
     <ClInclude Include="Interfaz.h" />
     <ClInclude Include="Jugador.h" />
+    <ClInclude Include="lore.h" />
+    <ClInclude Include="loreMayumi.h" />
     <ClInclude Include="matrices.h" />
     <ClInclude Include="misfunciones.h" />
     <ClInclude Include="Padre.h" />

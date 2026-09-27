@@ -3,12 +3,18 @@
 class Jugador : public Entidad {
 protected:
 	float vida;
+	int xp;
+	int nivel;
+	int xpParaSubir;
 public:
 	Jugador();
 	float getVida();
 	void recibirDanio(int danio);
 	virtual string* getArt() = 0;
 	virtual int getArtAlto() = 0;
+	int getXp();
+	int getNivel();
+	void sumarXp(int cantidad);
 };
 
 Jugador::Jugador() : Entidad() {
@@ -21,4 +27,14 @@ float Jugador::getVida() {
 
 void Jugador::recibirDanio(int danio) {
 	vida -= danio;
+}
+int Jugador::getXp() { return xp; }
+int Jugador::getNivel() { return nivel; }
+
+void Jugador::sumarXp(int cantidad) {
+	xp += cantidad;
+	if (xp >= xpParaSubir) {
+		xp -= xpParaSubir;
+		nivel++;
+	}
 }

@@ -14,7 +14,6 @@ private:
 	short cantidadArmas;
 	int direccionX;
 	int direccionY;
-
 public:
 	Gato(bool jugado);
 	void dibujar(int mapa[40][120]);
@@ -28,13 +27,11 @@ public:
     Proyectil** getProyectil();
     int getCantidadProyectiles();
     void disparar(int dx, int dy);
-    string* getArt() override {
-        return gatoArtInterfaz;
-    }
-    int getArtAlto() override {
-        return 4;
-    }
+    string* getArt() override;
+    int getArtAlto() override;
 };
+
+
 
 Gato::Gato(bool jugado): Jugador() {
 	cantidadArmas = 1;
@@ -49,7 +46,11 @@ Gato::Gato(bool jugado): Jugador() {
 	direccionY = 0;
 	this->jugado = jugado;
     Nombre = "Gato Negro";
+    xp = 0;
+    nivel = 1;
+    xpParaSubir = 2;
 }
+
 bool Gato::getJugado() {
 	return jugado;
 }
@@ -63,6 +64,14 @@ int Gato::getCantidadProyectiles() {
 
 void Gato::setJugado(bool jugado) {
 	this->jugado = jugado;
+}
+
+string* Gato::getArt() {
+    return gatoArtInterfaz;
+}
+
+int Gato::getArtAlto() {
+    return 4;
 }
 int Gato::getDanioArma() {
     return arma[0]->getDanio();

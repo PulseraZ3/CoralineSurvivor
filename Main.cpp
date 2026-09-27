@@ -3,16 +3,56 @@
 #include <ctime>
 #include "Gato.h"
 #include "Rata.h"
+#include "Drop.h"
 #include "Interfaz.h"
 #include "misfunciones.h"
 #include "matrices.h"
+#include "lore.h"
+#include "loreMayumi.h"
 using namespace std;
 
 int (*mapaActual)[120] = mapa1; 
 int mapaIndiceActual = 0;
 
+Drop** dropsActivos = nullptr;
+int cantidadDrops = 0;
+
 Rata** ratasActuales = nullptr;
 int cantidadRatasActuales = 0;
+
+void agregarDrop(int x, int y) {
+    Drop** nuevos = new Drop * [cantidadDrops + 1];
+    for (int i = 0; i < cantidadDrops; i++) {
+        nuevos[i] = dropsActivos[i];
+    }
+    nuevos[cantidadDrops] = new Drop(x, y);
+    delete[] dropsActivos;
+    dropsActivos = nuevos;
+    cantidadDrops++;
+    dropsActivos[cantidadDrops - 1]->dibujar();
+}
+
+bool gatoTocaDrop(Gato* gato, Drop* drop) {
+    int gx = gato->getX();
+    int gy = gato->getY();
+
+    bool solapaX = gx < drop->getX() + 3 && gx + 5 > drop->getX();
+    bool solapaY = gy < drop->getY() + 1 && gy + 3 > drop->getY();
+
+    return solapaX && solapaY;
+}
+void actualizarDrops(Gato* gato) {
+    for (int i = 0; i < cantidadDrops; i++) {
+        if (dropsActivos[i] == nullptr) continue;
+
+        if (gatoTocaDrop(gato, dropsActivos[i])) {
+            dropsActivos[i]->borrar(dropsActivos[i]->getX(), dropsActivos[i]->getY());
+            gato->sumarXp(1);
+            delete dropsActivos[i];
+            dropsActivos[i] = nullptr;
+        }
+    }
+}
 bool tocaPuerta(int mapa[40][120], int x, int y) {
     for (int fila = 0; fila < 3; fila++) {
         for (int columna = 0; columna < 5; columna++) {
@@ -48,7 +88,7 @@ Rata** crearRatasEnSala(int mapa[40][120], int cantidad) {
         bool ok = false;
 
         while (!ok && intentos < 1000) {
-            rx = rand() % 111;      // 120 - 9 de margen
+            rx = rand() % 111;  
             ry = rand() % 38;
             ok = areaLibreParaRata(mapa, rx, ry);
             intentos++;
@@ -97,7 +137,12 @@ void avanzarSala(Interfaz* interfaz, Gato* gato) {
 
     cantidadRatasActuales = ratasPorSala[mapaIndiceActual];
     ratasActuales = crearRatasEnSala(mapaActual, cantidadRatasActuales);
-
+    for (int i = 0; i < cantidadDrops; i++) {
+        if (dropsActivos[i] != nullptr) delete dropsActivos[i];
+    }
+    delete[] dropsActivos;
+    dropsActivos = nullptr;
+    cantidadDrops = 0;
     Console::Clear();
     interfaz->dibujarMapa(mapaActual);
     interfaz->dibujarMarco();
@@ -217,11 +262,8 @@ void comprobarColisiones(
                     );
 
                     if (!ratas[i]->estaVivo()) {
-
-                        ratas[i]->borrar(
-                            ratas[i]->getX(),
-                            ratas[i]->getY()
-                        );
+                        ratas[i]->borrar(ratas[i]->getX(), ratas[i]->getY());
+                        agregarDrop(ratas[i]->getX(), ratas[i]->getY());
                     }
                 }
             }
@@ -230,6 +272,8 @@ void comprobarColisiones(
 }
 int main() {
     mostrarMenuAnimado();
+    //encadenaciondosEscenas();
+    //mostrarCinematica();
     Console::CursorVisible = false;
     srand(time(NULL));
     Interfaz* interfaz = new Interfaz();
@@ -265,7 +309,7 @@ int main() {
         actualizarRatas(ratasActuales, cantidadRatasActuales);
         actualizarProyectiles(gato, mapaActual);
         comprobarColisiones(ratasActuales, cantidadRatasActuales, gato);
-
+        actualizarDrops(gato);
         interfaz->dibujarHUD(gato);
         _sleep(50);
     }
