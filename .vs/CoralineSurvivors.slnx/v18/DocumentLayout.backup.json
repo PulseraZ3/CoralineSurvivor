@@ -38,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 90,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
@@ -51,21 +51,7 @@
               "ViewState": "AgIAABYBAAAAAAAAAAAAwBoBAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-09-27T14:30:41.931Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Proyectil.h",
-              "DocumentMoniker": "C:\\Users\\Leona\\Documents\\Programacion\\C\u002B\u002B\\CoralineSurvivors\\Proyectil.h",
-              "RelativeDocumentMoniker": "Proyectil.h",
-              "ToolTip": "C:\\Users\\Leona\\Documents\\Programacion\\C\u002B\u002B\\CoralineSurvivors\\Proyectil.h",
-              "RelativeToolTip": "Proyectil.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-09-27T14:44:47.89Z",
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Bookmark",
@@ -77,6 +63,19 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Proyectil.h",
+              "DocumentMoniker": "C:\\Users\\Leona\\Documents\\Programacion\\C\u002B\u002B\\CoralineSurvivors\\Proyectil.h",
+              "RelativeDocumentMoniker": "Proyectil.h",
+              "ToolTip": "C:\\Users\\Leona\\Documents\\Programacion\\C\u002B\u002B\\CoralineSurvivors\\Proyectil.h",
+              "RelativeToolTip": "Proyectil.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-09-27T14:44:47.89Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 6,
               "Title": "Gato.h",
               "DocumentMoniker": "C:\\Users\\Leona\\Documents\\Programacion\\C\u002B\u002B\\CoralineSurvivors\\Gato.h",
@@ -85,8 +84,7 @@
               "RelativeToolTip": "Gato.h",
               "ViewState": "AgIAAI8AAAAAAAAAAAAAABAAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-09-27T14:35:38.652Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-27T14:35:38.652Z"
             },
             {
               "$type": "Document",
@@ -98,8 +96,7 @@
               "RelativeToolTip": "Interfaz.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADUAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-09-27T14:34:07.311Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-27T14:34:07.311Z"
             },
             {
               "$type": "Document",
@@ -111,8 +108,7 @@
               "RelativeToolTip": "Jugador.h",
               "ViewState": "AgIAAAIAAAAAAAAAAAAuwCcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-09-27T14:35:36.089Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-27T14:35:36.089Z"
             },
             {
               "$type": "Document",
@@ -124,8 +120,7 @@
               "RelativeToolTip": "Drop.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-09-27T14:27:27.49Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-27T14:27:27.49Z"
             },
             {
               "$type": "Document",
@@ -137,8 +132,7 @@
               "RelativeToolTip": "misfunciones.h",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-09-27T14:26:19.01Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-27T14:26:19.01Z"
             }
           ]
         }
