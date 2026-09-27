@@ -100,8 +100,6 @@ void Gato::borrar(int xAnterior, int yAnterior, int mapa[40][120]) {
         int longitud = gatoArt[fila].length();
 
         for (int columna = 0; columna < longitud; columna++) {
-            if (gatoArt[fila][columna] == ' ') continue;
-
             int mapaX = xAnterior + columna;
             int mapaY = yAnterior + fila;
 
@@ -116,7 +114,6 @@ void Gato::borrar(int xAnterior, int yAnterior, int mapa[40][120]) {
                     Console::BackgroundColor = ConsoleColor::Cyan;
                 }
 
-                // Offset también aquí, mismo criterio
                 Console::SetCursorPosition(mapaX + OFFSET_X, mapaY);
                 cout << " ";
             }

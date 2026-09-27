@@ -38,7 +38,7 @@ void Proyectil::setMapa(int mapa[40][120]) {
 }
 void Proyectil::dibujar() {
     Console::SetCursorPosition(x + OFFSET_X, y);
-    cout << ".O.";
+    cout << "(\")";
 }
 
 void Proyectil::borrar(int xAnterior, int yAnterior) {
