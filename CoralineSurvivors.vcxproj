@@ -122,7 +122,7 @@
       <AdditionalDependencies />
     </Link>
   </ItemDefinitionGroup>
-   <ItemGroup>
+  <ItemGroup>
     <ClInclude Include="Arma.h" />
     <ClInclude Include="ArmaMelee.h" />
     <ClInclude Include="ArmaRange.h" />
@@ -131,6 +131,7 @@
     <ClInclude Include="Drop.h" />
     <ClInclude Include="Enemigo.h" />
     <ClInclude Include="Entidad.h" />
+    <ClInclude Include="GameManager.h" />
     <ClInclude Include="Gato.h" />
     <ClInclude Include="Interfaz.h" />
     <ClInclude Include="Jugador.h" />

@@ -1,84 +1,73 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Archivos de origen">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
-    </Filter>
-    <Filter Include="Archivos de encabezado">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
-    </Filter>
-    <Filter Include="Archivos de recursos">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
-    </Filter>
+    <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Entidad.h">
-      <Filter>Archivos de encabezado</Filter>
-    </ClInclude>
-    <ClInclude Include="Padre.h">
-      <Filter>Archivos de encabezado</Filter>
-    </ClInclude>
     <ClInclude Include="Arma.h">
-      <Filter>Archivos de encabezado</Filter>
-    </ClInclude>
-    <ClInclude Include="misAsciiArt.h">
-      <Filter>Archivos de encabezado</Filter>
-    </ClInclude>
-    <ClInclude Include="Gato.h">
-      <Filter>Archivos de encabezado</Filter>
+      <Filter>encabezados</Filter>
     </ClInclude>
     <ClInclude Include="ArmaMelee.h">
-      <Filter>Archivos de encabezado</Filter>
+      <Filter>encabezados</Filter>
     </ClInclude>
     <ClInclude Include="ArmaRange.h">
-      <Filter>Archivos de encabezado</Filter>
-    </ClInclude>
-    <ClInclude Include="Proyectil.h">
-      <Filter>Archivos de encabezado</Filter>
-    </ClInclude>
-    <ClInclude Include="Enemigo.h">
-      <Filter>Archivos de encabezado</Filter>
-    </ClInclude>
-    <ClInclude Include="Rata.h">
-      <Filter>Archivos de encabezado</Filter>
-    </ClInclude>
-    <ClInclude Include="Interfaz.h">
-      <Filter>Archivos de encabezado</Filter>
-    </ClInclude>
-    <ClInclude Include="Jugador.h">
-      <Filter>Archivos de encabezado</Filter>
-    </ClInclude>
-    <ClInclude Include="matrices.h">
-      <Filter>Archivos de encabezado</Filter>
-    </ClInclude>
-    <ClInclude Include="misfunciones.h">
-      <Filter>Archivos de encabezado</Filter>
+      <Filter>encabezados</Filter>
     </ClInclude>
     <ClInclude Include="Colisiones.h">
-      <Filter>Archivos de encabezado</Filter>
+      <Filter>encabezados</Filter>
     </ClInclude>
-    <ClInclude Include="lore.h">
-      <Filter>Archivos de encabezado</Filter>
-    </ClInclude>
-    <ClInclude Include="loreMayumi.h">
-      <Filter>Archivos de encabezado</Filter>
+    <ClInclude Include="derrota-victoria.h">
+      <Filter>encabezados</Filter>
     </ClInclude>
     <ClInclude Include="Drop.h">
-      <Filter>Archivos de encabezado</Filter>
+      <Filter>encabezados</Filter>
     </ClInclude>
-<<<<<<< HEAD
-    <ClInclude Include="derrota-victoria.h">
-      <Filter>Archivos de encabezado</Filter>
+    <ClInclude Include="Enemigo.h">
+      <Filter>encabezados</Filter>
     </ClInclude>
-=======
->>>>>>> eddf9ee44b0ae9ff3f44ce8e5975b4caa8d7dbd9
+    <ClInclude Include="Entidad.h">
+      <Filter>encabezados</Filter>
+    </ClInclude>
+    <ClInclude Include="Gato.h">
+      <Filter>encabezados</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaz.h">
+      <Filter>encabezados</Filter>
+    </ClInclude>
+    <ClInclude Include="Jugador.h">
+      <Filter>encabezados</Filter>
+    </ClInclude>
+    <ClInclude Include="lore.h">
+      <Filter>encabezados</Filter>
+    </ClInclude>
+    <ClInclude Include="loreMayumi.h">
+      <Filter>encabezados</Filter>
+    </ClInclude>
+    <ClInclude Include="matrices.h">
+      <Filter>encabezados</Filter>
+    </ClInclude>
+    <ClInclude Include="misAsciiArt.h">
+      <Filter>encabezados</Filter>
+    </ClInclude>
+    <ClInclude Include="misfunciones.h">
+      <Filter>encabezados</Filter>
+    </ClInclude>
+    <ClInclude Include="Padre.h">
+      <Filter>encabezados</Filter>
+    </ClInclude>
+    <ClInclude Include="Proyectil.h">
+      <Filter>encabezados</Filter>
+    </ClInclude>
+    <ClInclude Include="Rata.h">
+      <Filter>encabezados</Filter>
+    </ClInclude>
+    <ClInclude Include="GameManager.h">
+      <Filter>encabezados</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Main.cpp">
-      <Filter>Archivos de origen</Filter>
-    </ClCompile>
+    <Filter Include="encabezados">
+      <UniqueIdentifier>{9968503f-f532-4578-b173-e17f8a3c6d11}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
 </Project>

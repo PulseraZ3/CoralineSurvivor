@@ -111,6 +111,7 @@
             "c:\\program files (x86)\\windows kits\\10\\include\\10.0.26100.0\\ucrt\\locale.h",
             "c:\\program files\\microsoft visual studio\\18\\community\\vc\\tools\\msvc\\14.51.36231\\include\\ostream",
             "c:\\program files (x86)\\windows kits\\10\\include\\10.0.26100.0\\ucrt\\conio.h",
+            "c:\\users\\leona\\downloads\\coralinesurvivor-main\\gamemanager.h",
             "c:\\users\\leona\\downloads\\coralinesurvivor-main\\gato.h",
             "c:\\users\\leona\\downloads\\coralinesurvivor-main\\jugador.h",
             "c:\\users\\leona\\downloads\\coralinesurvivor-main\\entidad.h",
@@ -124,11 +125,11 @@
             "c:\\users\\leona\\downloads\\coralinesurvivor-main\\enemigo.h",
             "c:\\users\\leona\\downloads\\coralinesurvivor-main\\drop.h",
             "c:\\users\\leona\\downloads\\coralinesurvivor-main\\interfaz.h",
+            "c:\\users\\leona\\downloads\\coralinesurvivor-main\\derrota-victoria.h",
             "c:\\users\\leona\\downloads\\coralinesurvivor-main\\misfunciones.h",
             "c:\\program files\\microsoft visual studio\\18\\community\\vc\\tools\\msvc\\14.51.36231\\include\\string",
             "c:\\users\\leona\\downloads\\coralinesurvivor-main\\lore.h",
-            "c:\\users\\leona\\downloads\\coralinesurvivor-main\\loremayumi.h",
-            "c:\\users\\leona\\downloads\\coralinesurvivor-main\\derrota-victoria.h"
+            "c:\\users\\leona\\downloads\\coralinesurvivor-main\\loremayumi.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []
