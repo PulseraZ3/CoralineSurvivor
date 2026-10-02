@@ -9,10 +9,13 @@
 #include "matrices.h"
 #include "lore.h"
 #include "loreMayumi.h"
+<<<<<<< HEAD
 
 #include "derrota-victoria.h"
 
 
+=======
+>>>>>>> eddf9ee44b0ae9ff3f44ce8e5975b4caa8d7dbd9
 using namespace std;
 
 int (*mapaActual)[120] = mapa1; 
@@ -118,6 +121,7 @@ void liberarRatas(Rata** ratas, int cantidad) {
     delete[] ratas;
 }
 
+<<<<<<< HEAD
 bool avanzarSala(Interfaz* interfaz, Gato* gato) {
     liberarRatas(ratasActuales, cantidadRatasActuales);
     ratasActuales = nullptr;       
@@ -127,6 +131,23 @@ bool avanzarSala(Interfaz* interfaz, Gato* gato) {
     if (mapaIndiceActual >= 0) {
         //ESTA vaina esta hardcodeada
         return true;
+=======
+void mostrarVictoria() {
+    Console::Clear();
+    Console::SetCursorPosition(40, 18);
+    cout << "GANASTE! Completaste las 6 salas.";
+    Console::CursorVisible = true;
+    _sleep(1000);
+    exit(0);
+}
+void avanzarSala(Interfaz* interfaz, Gato* gato) {
+    liberarRatas(ratasActuales, cantidadRatasActuales);
+
+    mapaIndiceActual++;
+
+    if (mapaIndiceActual >= 6) {
+        mostrarVictoria();
+>>>>>>> eddf9ee44b0ae9ff3f44ce8e5975b4caa8d7dbd9
     }
 
     mapaActual = mapas[mapaIndiceActual];
@@ -146,7 +167,10 @@ bool avanzarSala(Interfaz* interfaz, Gato* gato) {
     interfaz->dibujarMarco();
     interfaz->dibujarHUD(gato);
     gato->dibujar(mapaActual);
+<<<<<<< HEAD
     return false;
+=======
+>>>>>>> eddf9ee44b0ae9ff3f44ce8e5975b4caa8d7dbd9
 }
 
 void cambiarMapaAleatorio(Interfaz* interfaz, Gato* gato) {
@@ -270,6 +294,7 @@ void comprobarColisiones(
     }
 }
 int main() {
+<<<<<<< HEAD
     Console::CursorVisible = false;
     srand(time(NULL));
     int opc;
@@ -367,6 +392,49 @@ int main() {
 
         delete gato;
         delete interfaz;
+=======
+    mostrarMenuAnimado();
+    //encadenaciondosEscenas();
+    //mostrarCinematica();
+    Console::CursorVisible = false;
+    srand(time(NULL));
+    Interfaz* interfaz = new Interfaz();
+
+    Gato* gato = new Gato(true);
+    gato->setX(spawnX[mapaIndiceActual]);
+    gato->setY(spawnY[mapaIndiceActual]);
+
+    interfaz->configurarConsola();
+    Console::Clear();
+    interfaz->dibujarMapa(mapaActual);
+    interfaz->dibujarMarco();
+    interfaz->dibujarHUD(gato);
+    gato->dibujar(mapaActual);
+
+    cantidadRatasActuales = ratasPorSala[mapaIndiceActual];
+    ratasActuales = crearRatasEnSala(mapaActual, cantidadRatasActuales);
+
+    while (true) {
+        int xAnterior = gato->getX();
+        int yAnterior = gato->getY();
+        gato->mover(mapaActual);
+        gato->borrar(xAnterior, yAnterior, mapaActual);
+
+        if (tocaPuerta(mapaActual, gato->getX(), gato->getY()) &&
+            ratasVivas(ratasActuales, cantidadRatasActuales) == 0) {
+            avanzarSala(interfaz, gato);
+            continue;
+        }
+
+        gato->dibujar(mapaActual);
+
+        actualizarRatas(ratasActuales, cantidadRatasActuales);
+        actualizarProyectiles(gato, mapaActual);
+        comprobarColisiones(ratasActuales, cantidadRatasActuales, gato);
+        actualizarDrops(gato);
+        interfaz->dibujarHUD(gato);
+        _sleep(50);
+>>>>>>> eddf9ee44b0ae9ff3f44ce8e5975b4caa8d7dbd9
     }
 
     return 0;

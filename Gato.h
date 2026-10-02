@@ -29,10 +29,17 @@ public:
     void disparar(int dx, int dy);
     string* getArt() override;
     int getArtAlto() override;
+<<<<<<< HEAD
     void limpiarProyectiles();
 
 };
 
+=======
+};
+
+
+
+>>>>>>> eddf9ee44b0ae9ff3f44ce8e5975b4caa8d7dbd9
 Gato::Gato(bool jugado): Jugador() {
 	cantidadArmas = 1;
 	arma = new Arma*[cantidadArmas];
@@ -48,7 +55,11 @@ Gato::Gato(bool jugado): Jugador() {
     Nombre = "Gato Negro";
     xp = 0;
     nivel = 1;
+<<<<<<< HEAD
     xpParaSubir = 5;
+=======
+    xpParaSubir = 2;
+>>>>>>> eddf9ee44b0ae9ff3f44ce8e5975b4caa8d7dbd9
 }
 
 bool Gato::getJugado() {
@@ -159,6 +170,7 @@ void Gato::disparar(int dx, int dy) {
         tiempoDisparo = 0;
     }
 }
+<<<<<<< HEAD
 void Gato::limpiarProyectiles() {
     int vivos = 0;
     for (int i = 0; i < cantidadProyectiles; i++) {
@@ -189,6 +201,9 @@ void Gato::limpiarProyectiles() {
     proyectiles = nuevosProyectiles;
     cantidadProyectiles = vivos;
 }
+=======
+
+>>>>>>> eddf9ee44b0ae9ff3f44ce8e5975b4caa8d7dbd9
 void Gato::mover(int mapa[40][120]) {
 
     if (jugado == true) {

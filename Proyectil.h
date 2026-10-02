@@ -12,7 +12,10 @@ private:
     int (*mapaPtr)[120];
 public:
 	Proyectil(int x, int y, int dx, int dy);
+<<<<<<< HEAD
     ~Proyectil();
+=======
+>>>>>>> eddf9ee44b0ae9ff3f44ce8e5975b4caa8d7dbd9
 	void dibujar() override;
 	void borrar(int xAnterior, int yAnterior) override;
 	void mover() override;
@@ -21,6 +24,10 @@ public:
     void setMapa(int mapa[40][120]);
     void repintarCelda(int mapaX, int mapaY, int mapa[40][120]);
     void detener();
+<<<<<<< HEAD
+=======
+
+>>>>>>> eddf9ee44b0ae9ff3f44ce8e5975b4caa8d7dbd9
 };
 Proyectil::Proyectil(int x, int y, int dx, int dy) {
     this->x = x;
@@ -32,8 +39,11 @@ Proyectil::Proyectil(int x, int y, int dx, int dy) {
     rangoMaximo = 3;
     mapaPtr = nullptr;
 }
+<<<<<<< HEAD
 Proyectil::~Proyectil() {
 }
+=======
+>>>>>>> eddf9ee44b0ae9ff3f44ce8e5975b4caa8d7dbd9
 
 void Proyectil::setMapa(int mapa[40][120]) {
     mapaPtr = mapa;

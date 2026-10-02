@@ -69,9 +69,12 @@
     <ClInclude Include="Drop.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
+<<<<<<< HEAD
     <ClInclude Include="derrota-victoria.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
+=======
+>>>>>>> eddf9ee44b0ae9ff3f44ce8e5975b4caa8d7dbd9
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">

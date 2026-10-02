@@ -1,14 +1,37 @@
+<<<<<<< HEAD
 #include <iostream>
 #include <conio.h>
 #include <string>
+=======
+#pragma once
+#include <iostream>
+#include <conio.h>
+#include "matrices.h"
+const int ANCHO = 120;
+const int ALTO = 40;
+using namespace std;
+using namespace System;
+#include <iostream>
+#include <conio.h>
+>>>>>>> eddf9ee44b0ae9ff3f44ce8e5975b4caa8d7dbd9
 
 using namespace std;
 using namespace System;
 
+<<<<<<< HEAD
 void imprimirLineaAnimadadeldiablo(int x, string sprite) {
     string linea = "";
     for (int i = 0; i < 120; i++) {
         int k = i - x;
+=======
+
+void imprimirLineaAnimadadeldiablo(int x, string sprite) {
+    string linea = "";
+
+    for (int i = 0; i < 120; i++) {
+        int k = i - x;
+
+>>>>>>> eddf9ee44b0ae9ff3f44ce8e5975b4caa8d7dbd9
         if (k >= 0 && k < sprite.length()) {
             linea += sprite[k];
         }
@@ -19,6 +42,7 @@ void imprimirLineaAnimadadeldiablo(int x, string sprite) {
     cout << linea << "\n";
 }
 
+<<<<<<< HEAD
 
 int mostrarMenuAnimado(float& multXP, int& modDano, int& modVida, bool& escenasActivas) {
 
@@ -35,21 +59,50 @@ int mostrarMenuAnimado(float& multXP, int& modDano, int& modVida, bool& escenasA
         Console::SetCursorPosition(0, 0);
 
         int top_x = 120 - (frame % 170);
+=======
+void mostrarMenuAnimado() {
+    int opcionSeleccionada = 0;
+    int frame = 0;
+    bool enMenu = true;
+
+
+    Console::CursorVisible = false;
+    Console::Clear();
+
+
+    string opciones[3] = { "Iniciar Juego", "Modificadores", "Creditos" };
+
+    while (enMenu) {
+        Console::SetCursorPosition(0, 0);
+
+        int top_x = 150 - (frame % 170);
+
+>>>>>>> eddf9ee44b0ae9ff3f44ce8e5975b4caa8d7dbd9
         int bot_x = -50 + (frame % 170);
 
         cout << "\n\n\n";
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> eddf9ee44b0ae9ff3f44ce8e5975b4caa8d7dbd9
         Console::ForegroundColor = ConsoleColor::DarkGray;
         imprimirLineaAnimadadeldiablo(top_x, "   O/      <:3 )~  <:3 )~  <:3 )~");
         imprimirLineaAnimadadeldiablo(top_x, "  /|       <:3 )~  <:3 )~  <:3 )~");
         imprimirLineaAnimadadeldiablo(top_x, "  / \\     <:3 )~  <:3 )~  <:3 )~");
 
+<<<<<<< HEAD
         for (int i = 0; i < 10; i++) cout << string(120, ' ') << "\n";
+=======
+
+        for (int i = 0; i < 9; i++) cout << string(120, ' ') << "\n";
+>>>>>>> eddf9ee44b0ae9ff3f44ce8e5975b4caa8d7dbd9
 
         Console::ForegroundColor = ConsoleColor::White;
         string titulo = "Carolina's Horror Adventure - Carolina Carolina, donde estas que no te veo";
         cout << string((120 - titulo.length()) / 2, ' ') << titulo << "\n\n";
 
+<<<<<<< HEAD
         if (estadoActual == 0) {
 
             string opcionesPrincipal[4] = { "Iniciar Juego", "Modificadores", "Creditos", "Salir" };
@@ -124,6 +177,25 @@ int mostrarMenuAnimado(float& multXP, int& modDano, int& modVida, bool& escenasA
             for (int i = 0; i < 5; i++) cout << string(120, ' ') << "\n";
         }
 
+=======
+        for (int i = 0; i < 3; i++) {
+            string opt = opciones[i];
+            int espacios = (120 - opt.length()) / 2;
+
+            if (i == opcionSeleccionada) {
+                Console::ForegroundColor = ConsoleColor::Cyan;
+                cout << string(espacios - 3, ' ') << ">> " << opt << " <<\n";
+            }
+            else {
+                Console::ForegroundColor = ConsoleColor::DarkGray;
+                cout << string(espacios, ' ') << opt << string(espacios, ' ') << "\n";
+            }
+        }
+
+
+        for (int i = 0; i < 10; i++) cout << string(120, ' ') << "\n";
+
+>>>>>>> eddf9ee44b0ae9ff3f44ce8e5975b4caa8d7dbd9
         Console::ForegroundColor = ConsoleColor::DarkGray;
         imprimirLineaAnimadadeldiablo(bot_x, "~( E:>  ~( E:>  ~( E:>      \\O   ");
         imprimirLineaAnimadadeldiablo(bot_x, "~( E:>  ~( E:>  ~( E:>       |\\  ");
@@ -131,6 +203,7 @@ int mostrarMenuAnimado(float& multXP, int& modDano, int& modVida, bool& escenasA
 
         for (int i = 0; i < 6; i++) cout << string(120, ' ') << "\n";
 
+<<<<<<< HEAD
 
         if (_kbhit()) {
             char tecla = _getch();
@@ -204,14 +277,26 @@ int mostrarMenuAnimado(float& multXP, int& modDano, int& modVida, bool& escenasA
                     estadoActual = 0;
                 }
             }
+=======
+        if (_kbhit()) {
+            char tecla = _getch();
+            if ((tecla == 'w' || tecla == 'W') && opcionSeleccionada > 0) opcionSeleccionada--;
+            if ((tecla == 's' || tecla == 'S') && opcionSeleccionada < 2) opcionSeleccionada++;
+            if (tecla == '\r') enMenu = false;
+>>>>>>> eddf9ee44b0ae9ff3f44ce8e5975b4caa8d7dbd9
         }
 
         frame++;
         _sleep(40);
     }
+<<<<<<< HEAD
 
     Console::Clear();
     Console::ForegroundColor = ConsoleColor::Gray;
 
     return opcionPrincipal;
+=======
+    Console::Clear();
+    Console::ForegroundColor = ConsoleColor::Gray;
+>>>>>>> eddf9ee44b0ae9ff3f44ce8e5975b4caa8d7dbd9
 }
