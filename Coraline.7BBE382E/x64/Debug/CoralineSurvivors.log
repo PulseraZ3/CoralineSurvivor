@@ -1,0 +1,79 @@
+﻿  Main.cpp
+C:\Users\Leona\Downloads\CoralineSurvivor-main\Colisiones.h(7,19): warning C4267: 'inicializando': conversión de 'size_t' a 'int'; posible pérdida de datos
+  (compilando archivo de origen "Main.cpp")
+  
+C:\Users\Leona\Downloads\CoralineSurvivor-main\Gato.h(81,22): warning C4267: 'inicializando': conversión de 'size_t' a 'int'; posible pérdida de datos
+  (compilando archivo de origen "Main.cpp")
+  
+C:\Users\Leona\Downloads\CoralineSurvivor-main\Gato.h(109,22): warning C4267: 'inicializando': conversión de 'size_t' a 'int'; posible pérdida de datos
+  (compilando archivo de origen "Main.cpp")
+  
+C:\Users\Leona\Downloads\CoralineSurvivor-main\misfunciones.h(59,30): warning C4267: 'inicializando': conversión de 'size_t' a 'int'; posible pérdida de datos
+  (compilando archivo de origen "Main.cpp")
+  
+C:\Users\Leona\Downloads\CoralineSurvivor-main\misfunciones.h(92,30): warning C4267: 'inicializando': conversión de 'size_t' a 'int'; posible pérdida de datos
+  (compilando archivo de origen "Main.cpp")
+  
+C:\Users\Leona\Downloads\CoralineSurvivor-main\misfunciones.h(111,30): warning C4267: 'inicializando': conversión de 'size_t' a 'int'; posible pérdida de datos
+  (compilando archivo de origen "Main.cpp")
+  
+C:\Users\Leona\Downloads\CoralineSurvivor-main\misfunciones.h(119,26): warning C4267: 'inicializando': conversión de 'size_t' a 'int'; posible pérdida de datos
+  (compilando archivo de origen "Main.cpp")
+  
+C:\Users\Leona\Downloads\CoralineSurvivor-main\misfunciones.h(210,9): warning C4996: '_sleep': This function or variable has been superceded by newer library or operating system functionality. Consider using Sleep instead. See online help for details.
+  (compilando archivo de origen "Main.cpp")
+  
+C:\Users\Leona\Downloads\CoralineSurvivor-main\lore.h(157,13): warning C4996: '_sleep': This function or variable has been superceded by newer library or operating system functionality. Consider using Sleep instead. See online help for details.
+  (compilando archivo de origen "Main.cpp")
+  
+C:\Users\Leona\Downloads\CoralineSurvivor-main\lore.h(169,13): warning C4996: '_sleep': This function or variable has been superceded by newer library or operating system functionality. Consider using Sleep instead. See online help for details.
+  (compilando archivo de origen "Main.cpp")
+  
+C:\Users\Leona\Downloads\CoralineSurvivor-main\loreMayumi.h(79,3): warning C4996: '_sleep': This function or variable has been superceded by newer library or operating system functionality. Consider using Sleep instead. See online help for details.
+  (compilando archivo de origen "Main.cpp")
+  
+C:\Users\Leona\Downloads\CoralineSurvivor-main\loreMayumi.h(115,3): warning C4996: '_sleep': This function or variable has been superceded by newer library or operating system functionality. Consider using Sleep instead. See online help for details.
+  (compilando archivo de origen "Main.cpp")
+  
+C:\Users\Leona\Downloads\CoralineSurvivor-main\loreMayumi.h(130,2): warning C4996: '_sleep': This function or variable has been superceded by newer library or operating system functionality. Consider using Sleep instead. See online help for details.
+  (compilando archivo de origen "Main.cpp")
+  
+C:\Users\Leona\Downloads\CoralineSurvivor-main\loreMayumi.h(214,3): warning C4996: '_sleep': This function or variable has been superceded by newer library or operating system functionality. Consider using Sleep instead. See online help for details.
+  (compilando archivo de origen "Main.cpp")
+  
+C:\Users\Leona\Downloads\CoralineSurvivor-main\loreMayumi.h(230,2): warning C4996: '_sleep': This function or variable has been superceded by newer library or operating system functionality. Consider using Sleep instead. See online help for details.
+  (compilando archivo de origen "Main.cpp")
+  
+C:\Users\Leona\Downloads\CoralineSurvivor-main\loreMayumi.h(265,2): warning C4996: '_sleep': This function or variable has been superceded by newer library or operating system functionality. Consider using Sleep instead. See online help for details.
+  (compilando archivo de origen "Main.cpp")
+  
+C:\Users\Leona\Downloads\CoralineSurvivor-main\derrota-victoria.h(15,9): warning C4996: '_sleep': This function or variable has been superceded by newer library or operating system functionality. Consider using Sleep instead. See online help for details.
+  (compilando archivo de origen "Main.cpp")
+  
+C:\Users\Leona\Downloads\CoralineSurvivor-main\derrota-victoria.h(40,5): warning C4996: '_sleep': This function or variable has been superceded by newer library or operating system functionality. Consider using Sleep instead. See online help for details.
+  (compilando archivo de origen "Main.cpp")
+  
+C:\Users\Leona\Downloads\CoralineSurvivor-main\derrota-victoria.h(44,5): warning C4996: '_sleep': This function or variable has been superceded by newer library or operating system functionality. Consider using Sleep instead. See online help for details.
+  (compilando archivo de origen "Main.cpp")
+  
+C:\Users\Leona\Downloads\CoralineSurvivor-main\derrota-victoria.h(46,5): warning C4996: '_sleep': This function or variable has been superceded by newer library or operating system functionality. Consider using Sleep instead. See online help for details.
+  (compilando archivo de origen "Main.cpp")
+  
+C:\Users\Leona\Downloads\CoralineSurvivor-main\derrota-victoria.h(70,9): warning C4996: '_sleep': This function or variable has been superceded by newer library or operating system functionality. Consider using Sleep instead. See online help for details.
+  (compilando archivo de origen "Main.cpp")
+  
+C:\Users\Leona\Downloads\CoralineSurvivor-main\derrota-victoria.h(102,5): warning C4996: '_sleep': This function or variable has been superceded by newer library or operating system functionality. Consider using Sleep instead. See online help for details.
+  (compilando archivo de origen "Main.cpp")
+  
+C:\Users\Leona\Downloads\CoralineSurvivor-main\derrota-victoria.h(127,5): warning C4996: '_sleep': This function or variable has been superceded by newer library or operating system functionality. Consider using Sleep instead. See online help for details.
+  (compilando archivo de origen "Main.cpp")
+  
+C:\Users\Leona\Downloads\CoralineSurvivor-main\derrota-victoria.h(183,9): warning C4996: '_sleep': This function or variable has been superceded by newer library or operating system functionality. Consider using Sleep instead. See online help for details.
+  (compilando archivo de origen "Main.cpp")
+  
+C:\Users\Leona\Downloads\CoralineSurvivor-main\Main.cpp(274,15): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+C:\Users\Leona\Downloads\CoralineSurvivor-main\Main.cpp(348,13): warning C4996: '_sleep': This function or variable has been superceded by newer library or operating system functionality. Consider using Sleep instead. See online help for details.
+  .NETFramework,Version=v4.7.2.AssemblyAttributes.cpp
+  Generando código...
+  Main.obj : se encontró un módulo MSIL; vinculación incremental deshabilitada para MSIL; ejecutando vínculo completo
+  CoralineSurvivors.vcxproj -> C:\Users\Leona\Downloads\CoralineSurvivor-main\x64\Debug\CoralineSurvivors.exe
